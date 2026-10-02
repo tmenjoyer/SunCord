@@ -1,24 +1,73 @@
-# Compiled class file
-*.class
+dist
+node_modules
+.VSCodeCounter
 
-# Log file
+*.exe
+vencord_installer
+equicord_installer
+
+.idea
+.DS_Store
+
+yarn.lock
+bun.lock
+package-lock.json
+
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+*.tsbuildinfo
 
-# BlueJ files
-*.ctxt
+.modules/
+src/userplugins
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+ExtensionCache/
+/settings
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
+# vencord companion module cache
+.modules
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+# wakatime related stuff
+.wakatime-project
+
+# build outputs & binaries
+release/
+build/
+dist/
+# Exception : scripts/build/ contient les scripts de compilation et doit être versionné
+!scripts/build/
+
+# IDE settings
+.vscode/
+
+# backup & temp files
+*.patch.txt
+
+# Test and local dev directories
+test-dist/
+test-userdata/
+test-app/
+
+# Environment & credentials
+.gitea_token
+.env
+.env.*
+*.env
+*.pem
+*.key
+certs/
+
+# System files
+Thumbs.db
+Desktop.ini
+
+# Ignored local scripts
+publish-release.bat
+buildextension.bat
+
+# ghost-server — distributed via GhostClient installer, not bundled in repo
+# Contains heavy binaries (ffmpeg.exe, node.exe, yt-dlp.exe) — optional feature
+ghost-server/
