@@ -45,7 +45,7 @@ npm install -g pnpm
 ### Clone & Build
 
 ```bash
-git clone https://source.nightcord.st/nightcord/nightcord.git
+git clone https://github.com/tmenjoyer/SunCord
 cd suncord
 pnpm install
 pnpm build
